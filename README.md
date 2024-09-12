@@ -39,16 +39,16 @@ This is a full-stack image uploader project that allows users to upload an image
    cd ImageUploader/backend
 2. Install the dependencies:
    npm install
-3. Configure PostgreSQL:
+3. Configure PostgreSQL:<br/>
    - Create a PostgreSQL database:
      CREATE DATABASE ImageUploader;
-  - Set up the database schema:
-    CREATE TABLE images (
-    id SERIAL PRIMARY KEY,
-    filename TEXT NOT NULL,
-    filepath TEXT NOT NULL,
-    upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
+  -  Set up the database schema:
+     CREATE TABLE images (
+     id SERIAL PRIMARY KEY,
+     filename TEXT NOT NULL,
+     filepath TEXT NOT NULL,
+     upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+     );
 4. Configure the database connection in backend/index.js:
     const pool = new Pool({
     user: 'postgres',   // Your PostgreSQL user
