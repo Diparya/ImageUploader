@@ -35,8 +35,8 @@ This is a full-stack image uploader project that allows users to upload an image
 
 ### Backend Setup
 1. Clone the repository:
-   git clone https://github.com/your-repo/image-uploader.git
-   cd image-uploader/backend
+   git clone https://github.com/Diparya/ImageUploader.git
+   cd ImageUploader/backend
 2. Install the dependencies:
    npm install
 3. Configure PostgreSQL:
@@ -58,25 +58,25 @@ This is a full-stack image uploader project that allows users to upload an image
     port: 5432,  // Default PostgreSQL port
     });
 5. Start the backend server:
-   npm start
+   npm run dev
 The backend will run on http://localhost:3000.
 
 ## React Native App Setup
 1. Navigate to the react-native-app directory:
-   cd ../react-native-app
+   cd ../frontend
 2. Install the dependencies:
    npm install
 3. Start the app using Expo:
-   expo start
+   npm start
 You can now test the app on an emulator or real device using the Expo Go app.
 
 ## React Web App Setup
 1. Navigate to the react-web-app directory:
-   cd ../react-web-app
+   cd ../webapp
 2. Install the dependencies:
    npm install
 3. Start the React web app:
-   npm start
+   npm run dev
 
 ## Usage
 1. Upload Image:
