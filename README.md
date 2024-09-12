@@ -34,48 +34,48 @@ This is a full-stack image uploader project that allows users to upload an image
   - Expo CLI for React Native app development
 
 ### Backend Setup
-1. Clone the repository:
-   git clone https://github.com/Diparya/ImageUploader.git
+1. Clone the repository:<br/>
+   git clone https://github.com/Diparya/ImageUploader.git<br/>
    cd ImageUploader/backend
-2. Install the dependencies:
+2. Install the dependencies:<br/>
    npm install
 3. Configure PostgreSQL:<br/>
-   - Create a PostgreSQL database:
+   - Create a PostgreSQL database:<br/>
      CREATE DATABASE ImageUploader;
-  -  Set up the database schema:
-     CREATE TABLE images (
-     id SERIAL PRIMARY KEY,
-     filename TEXT NOT NULL,
-     filepath TEXT NOT NULL,
-     upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  -  Set up the database schema:<br/>
+     CREATE TABLE images (<br/>
+      id SERIAL PRIMARY KEY,<br/>
+      filename TEXT NOT NULL,<br/>
+      filepath TEXT NOT NULL,<br/>
+      upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP<br/>
      );
 4. Configure the database connection in backend/index.js:<br/>
-    const pool = new Pool({
-    user: 'postgres',   // Your PostgreSQL user
-    host: 'localhost',  // Your PostgreSQL host
-    database: 'ImageUploader',  // Your database name
-    password: 'your-password',  // Your PostgreSQL password
-    port: 5432,  // Default PostgreSQL port
+    const pool = new Pool({<br/>
+     user: 'postgres',   // Your PostgreSQL user<br/>
+     host: 'localhost',  // Your PostgreSQL host<br/>
+     database: 'ImageUploader',  // Your database name<br/>
+     password: 'your-password',  // Your PostgreSQL password<br/>
+     port: 5432,  // Default PostgreSQL port<br/>
     });
-5. Start the backend server:
-   npm run dev
+5. Start the backend server:<br/>
+   npm run dev<br/>
 The backend will run on http://localhost:3000.
 
 ## React Native App Setup
-1. Navigate to the react-native-app directory:
+1. Navigate to the react-native-app directory:<br/>
    cd ../frontend
-2. Install the dependencies:
+2. Install the dependencies:<br/>
    npm install
-3. Start the app using Expo:
-   npm start
+3. Start the app using Expo:<br/>
+   npm start<br/>
 You can now test the app on an emulator or real device using the Expo Go app.
 
 ## React Web App Setup
-1. Navigate to the react-web-app directory:
+1. Navigate to the react-web-app directory:<br/>
    cd ../webapp
-2. Install the dependencies:
+2. Install the dependencies:<br/>
    npm install
-3. Start the React web app:
+3. Start the React web app:<br/>
    npm run dev
 
 ## Usage
