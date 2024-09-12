@@ -84,3 +84,25 @@ You can now test the app on an emulator or real device using the Expo Go app.
    - Click on the "Upload" button to send the image to the backend.
 2. View Images:
    - Open the React web app to see all the uploaded images.
+  
+## API Endpoints
+### POST /upload
+- Description: Upload an image.
+- Request:
+     - Form data containing an image file under the key image.
+- Response:
+     - 200 OK: On successful upload.
+     - 500 Internal Server Error: If something goes wrong.
+### GET /images
+- Description: Fetch all uploaded images.
+- Response:
+     - Returns an array of image metadata (id, filename, filepath, upload time).
+
+## Contributing
+Contributions are welcome! Please create a pull request with your changes.
+
+## Contact
+For any questions or inquiries, please contact diparya28@gmail.com.
+
+## Final Note
+Ensure that the backend is running and properly configured, and that the React Native app can access the backend using the correct IP address. If you are testing on a physical device, use your computer's local IP address instead of localhost.
