@@ -49,7 +49,7 @@ This is a full-stack image uploader project that allows users to upload an image
      filepath TEXT NOT NULL,
      upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
      );
-4. Configure the database connection in backend/index.js:
+4. Configure the database connection in backend/index.js:<br/>
     const pool = new Pool({
     user: 'postgres',   // Your PostgreSQL user
     host: 'localhost',  // Your PostgreSQL host
